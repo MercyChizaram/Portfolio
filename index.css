@@ -27,7 +27,7 @@ header {
     border-bottom: 1px solid rgba(255, 255,255, 0.2);
 }
 
-.logo{
+.logo-section{
     display: flex;
     align-items: center;
     font-size: 25px;
@@ -100,7 +100,7 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-button {
+.buttons a {
     padding: 12px 25px;
     border: none;
     border-radius: 8px;
@@ -193,7 +193,7 @@ ul {
     grid-template-columns: repeat(3, minmax(150px, 200px));
     justify-content: start;
     gap: 20px;
-    width: 100%;
+    width: 100%;    
 }
 
 .tools{
@@ -221,10 +221,44 @@ ul {
     background-color: white;
 }
 
+.contact {
+    text-align: center;
+    justify-content: center;
+}
+
+.contact p {
+    text-align: center;
+    margin: auto;
+    line-height: 1.8;
+    justify-content: center;
+}
+
 @media(max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px 25px;
     }
     .image {
         flex-direction: column;
@@ -248,7 +282,36 @@ ul {
     .socials {
         justify-content: center;
     }
-}
 
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+    }
+
+    .logo {
+        width: 45px;
+    }
+
+    .logo-section{
+        justify-content: center;
+        width:45px;
+    }
+
+    .logo-name{
+        font-size:20 
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .content p {
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+}
 
 
